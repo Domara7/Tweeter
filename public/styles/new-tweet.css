@@ -1,0 +1,25 @@
+.new-tweet-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-tweet-action button {
+  background: darkblue;
+  color: aliceblue;
+  font-family: "Bungee", cursive;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 30px;
+  border-bottom: 4px solid black;
+  background-color: transparent;
+}
+
+.new-tweet label {
+  font-family: "font awesome";
+  font-weight: bold;
+}
