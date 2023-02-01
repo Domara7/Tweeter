@@ -14,12 +14,17 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  height: 30px;
+  /* height: 30px; */
   border-bottom: 4px solid black;
   background-color: transparent;
+  resize: none;
 }
 
 .new-tweet label {
   font-family: "font awesome";
   font-weight: bold;
+}
+
+.counter {
+  font-family: "Bungee", cursive;
 }
