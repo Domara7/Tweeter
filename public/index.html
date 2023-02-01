@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- Bungee font -->
     <!-- CSS font-family: 'Bungee', cursive; -->
@@ -72,7 +73,7 @@
         <div class="right-menu">Write a new tweet</div>
       </div>
     </nav>
-    <header>
+    <header class="main-header">
       <div class="avatar">
         <img src="/images/profile-hex.png" />
       </div>
@@ -93,6 +94,29 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+      </section>
+      <section class="tweets-container">
+        <article>
+          <header class="profile">
+            <div class="picture-name">
+              <img src="https://i.imgur.com/73hZDYK.png" />
+              <p>Domara Hawil</p>
+            </div>
+            <div class="name-handle">@MrsJacobs</div>
+          </header>
+          <p class="tweet-body">
+            If i have seen further it is by standing on the shoulders of a
+            giant.
+          </p>
+          <footer class="footer">
+            <div class="days">10 days ago</div>
+            <div class="icons">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>

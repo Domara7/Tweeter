@@ -1,0 +1,55 @@
+.tweets-container {
+  border: solid;
+  margin-top: 15px;
+}
+
+.tweets-container header.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweets-container .picture-name {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.tweets-container .name-handle {
+  color: blue;
+  opacity: 20%;
+}
+
+.tweets-container .footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid black;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.tweets-container .footer .icons i:hover {
+  color: coral;
+}
+
+.tweets-container .footer .days {
+  font-size: 16px;
+}
+
+.tweets-container .footer .icons i {
+  font-size: 18px;
+}
+
+.tweets-container .picture-name img {
+  width: 50px;
+  height: 50px;
+}
+
+.tweets-container .picture-name p {
+  padding-left: 15px;
+}
+
+.tweets-container header,
+.tweets-container .tweet-body {
+  padding: 0 10px;
+}
