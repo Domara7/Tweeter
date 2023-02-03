@@ -1,6 +1,7 @@
 .tweets-container {
   border: solid;
   margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .tweets-container header.profile {
