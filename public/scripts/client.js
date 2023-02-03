@@ -34,7 +34,7 @@ $(document).ready(function () {
   const renderTweets = (tweets) => {
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      return $("#tweets-container").append($tweet);
+      $("#tweets-container").append($tweet);
     }
   };
 
@@ -64,4 +64,14 @@ $(document).ready(function () {
   };
 
   renderTweets(data);
+
+  $("#tweet-form").submit(function (event) {
+    event.preventDefault();
+    const formData = $(this).serialize();
+    $.post("/tweets", formData).done(function (data) {
+      console.log(data);
+    });
+  });
 });
+
+// $.post().submit(function (article) {});

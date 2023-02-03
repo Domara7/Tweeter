@@ -1,5 +1,5 @@
 .tweets-container {
-  border: solid;
+  /* border: solid; */
   margin-top: 15px;
   margin-bottom: 20px;
 }
@@ -53,4 +53,12 @@
 .tweets-container header,
 .tweets-container .tweet-body {
   padding: 0 10px;
+}
+
+article {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  margin-top: 20px;
+  white-space: 5px;
 }
