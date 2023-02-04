@@ -52,10 +52,11 @@ $(document).ready(function () {
     let inputLength = $(".counter").val();
 
     if (inputLength < 0) {
-      alert("Cannot sumbit form");
+      $(".error").slideDown(200);
     } else {
       $.post("/tweets", formData).done(function (data) {
         console.log(data);
+        $(".error").slideUp();
         $("#tweet-text").val("");
         $(".counter").val("140");
         loadTweets();
@@ -73,5 +74,7 @@ $(document).ready(function () {
       },
     });
   };
+  $(".error").slideUp();
+
   loadTweets();
 });

@@ -18,6 +18,9 @@ nav {
 
 nav .right-menu {
   position: relative;
-  left: 825px;
-  bottom: 50px;
+}
+
+nav .nav-content {
+  display: flex;
+  justify-content: space-between;
 }
