@@ -5,7 +5,13 @@
  */
 
 // Test / driver code (temporary). Eventually will get this from the server.
+
 $(document).ready(function () {
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   const renderTweets = (tweets) => {
     $("#tweets-container").empty();
 
@@ -26,7 +32,7 @@ $(document).ready(function () {
             <div class="name-handle">${data.user.handle}</div>
           </header>
           <p class="tweet-body">
-            ${data.content.text}
+            ${escape(data.content.text)}
           </p>
           <footer class="footer">
             <div class="days">${timeago.format(data.created_at, "en_US")}</div>
