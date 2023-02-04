@@ -7,9 +7,11 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 $(document).ready(function () {
   const renderTweets = (tweets) => {
+    $("#tweets-container").empty();
+
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
-      $("#tweets-container").append($tweet);
+      $("#tweets-container").prepend($tweet);
     }
   };
 
@@ -39,7 +41,6 @@ $(document).ready(function () {
   };
 
   $("#tweet-form").submit(function (event) {
-    event.preventDefault();
     const formData = $(this).serialize();
 
     let inputLength = $(".counter").val();
@@ -49,8 +50,12 @@ $(document).ready(function () {
     } else {
       $.post("/tweets", formData).done(function (data) {
         console.log(data);
+        $("#tweet-text").val("");
+        $(".counter").val("140");
+        loadTweets();
       });
     }
+    event.preventDefault();
   });
 
   const loadTweets = () => {

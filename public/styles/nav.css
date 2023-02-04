@@ -11,4 +11,13 @@ nav {
 }
 .logo {
   font-family: "Bungee", cursive;
+  position: relative;
+  bottom: 10px;
+  font-size: xx-large;
+}
+
+nav .right-menu {
+  position: relative;
+  left: 825px;
+  bottom: 50px;
 }

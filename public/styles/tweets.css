@@ -62,3 +62,6 @@ article {
   margin-top: 20px;
   white-space: 5px;
 }
+.tweets-container .tweet-body {
+  overflow-wrap: break-word;
+}
