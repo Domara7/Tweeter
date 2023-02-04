@@ -41,9 +41,16 @@ $(document).ready(function () {
   $("#tweet-form").submit(function (event) {
     event.preventDefault();
     const formData = $(this).serialize();
-    $.post("/tweets", formData).done(function (data) {
-      console.log(data);
-    });
+
+    let inputLength = $(".counter").val();
+
+    if (inputLength < 0) {
+      alert("Cannot sumbit form");
+    } else {
+      $.post("/tweets", formData).done(function (data) {
+        console.log(data);
+      });
+    }
   });
 
   const loadTweets = () => {
