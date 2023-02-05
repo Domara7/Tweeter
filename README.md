@@ -8,3 +8,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## ScreenShots
+
+!["ScreenShot](https://github.com/Domara7/Tweeter/blob/main/public/docs/Tweeter1.png?raw=true)
+
+!["ScreenShot](https://github.com/Domara7/Tweeter/blob/main/public/docs/Tweeter2.png?raw=true)
