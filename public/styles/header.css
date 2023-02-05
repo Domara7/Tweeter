@@ -1,16 +1,20 @@
 .main-header {
   height: 400px;
-  width: 100%;
   margin-top: 120px;
-  background-color: rgb(219, 207, 164);
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 }
 
 .avatar {
   display: flex;
   justify-content: center;
+  padding-top: 75px;
 }
 .name {
   display: flex;
   justify-content: center;
+}
+
+.main-header-content {
+  background-color: rgb(219, 207, 164);
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  height: 500px;
 }
